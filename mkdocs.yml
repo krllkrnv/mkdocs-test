@@ -23,9 +23,3 @@ nav:
 
 plugins:
   - search
-  - social
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/krllkrnv
