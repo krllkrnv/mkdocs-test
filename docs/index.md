@@ -26,7 +26,7 @@ python -m venv env
 .\env\Scripts\Activate.ps1
 ```
 
-#### Установка MkDocs
+#### Установка MkDocs 
 ```bash
 pip install mkdocs mkdocs-material
 ```
