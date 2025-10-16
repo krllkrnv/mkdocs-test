@@ -1,5 +1,7 @@
 // API сервис для работы с глоссарием
-const API_BASE = 'http://localhost:8000/api'
+const API_BASE = process.env.NODE_ENV === 'production' 
+  ? 'https://mindmap-vkr-backend.vercel.app/api'
+  : 'http://localhost:8000/api'
 
 class GlossaryAPI {
   // Получить все термины с пагинацией и поиском
