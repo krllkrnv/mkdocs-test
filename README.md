@@ -14,24 +14,6 @@
 
 ---
 
-## 2. Цель и задачи
-
-**Цель работы:** создание статического сайта с использованием генератора статических сайтов на Python и организация автоматизированного процесса его развертывания на платформе GitHub Pages.
-
-**Задачи:**
-
-1. Установка и настройка среды разработки: проверка наличия Python актуальной версии, установка менеджера пакетов pip, настройка виртуального окружения (virtualenv).
-2. Установка и конфигурация генератора статических сайтов MkDocs.
-3. Создание структуры проекта и подготовка контента в формате Markdown.
-4. Настройка автоматизации деплоя через GitHub Actions с использованием механизма "Static HTML".
-5. Публикация изменений в репозиторий и настройка GitHub Pages.
-6. Проверка работоспособности развернутого сайта и отладка возможных проблем.
-7. Исследование возможностей использования отечественных CDN для ускорения доставки контента.
-8. Изучение возможностей платформы GitVerse для реализации CI/CD.
-9. Анализ вариантов деплоя статических сайтов в продакшен-среду и определение необходимых технических инструментов.
-
----
-
 ## 3. Объект, предмет и средства исследования
 
 **Объект исследования:** процесс создания и развертывания статических сайтов с использованием генераторов статических сайтов на Python.
@@ -290,7 +272,7 @@ rsync -avz --delete ./site/ user@server:/var/www/site/
 
 Результаты: создан сайт на MkDocs; подготовлен CI/CD для GitHub Pages (Static HTML); выполнено исследование CDN, GitVerse CI/CD и вариантов продакшен-деплоя; определена процедура проверки результата развертывания.
 
-Требования технического задания отражены в настоящем отчете; фактическая публикация на GitHub Pages подтверждается успешным выполнением workflow и доступностью сайта (проверка выполняется по процедуре раздела 5.7).
+Требования технического задания отражены в настоящем отчете; фактическая публикация на GitHub Pages подтверждается успешным выполнением workflow и доступностью сайта.
 
 ---
 
@@ -302,19 +284,19 @@ rsync -avz --delete ./site/ user@server:/var/www/site/
 
 ## Список источников
 
-1. Материалы задания 2.1 "Создание и развертывание статического сайта" [Электронный ресурс]. — Режим доступа: https://disk.yandex.ru/i/RRaTxrn5psk7ZQ
+1. Материалы задания 2.1 "Создание и развертывание статического сайта" . — Режим доступа: https://disk.yandex.ru/i/RRaTxrn5psk7ZQ
 
-2. MkDocs — Project documentation with Markdown [Электронный ресурс]. — Режим доступа: https://www.mkdocs.org/
+2. MkDocs — Project documentation with Markdown . — Режим доступа: https://www.mkdocs.org/
 
-3. Material for MkDocs [Электронный ресурс]. — Режим доступа: https://squidfunk.github.io/mkdocs-material/
+3. Material for MkDocs . — Режим доступа: https://squidfunk.github.io/mkdocs-material/
 
-4. GitHub Pages Documentation [Электронный ресурс]. — Режим доступа: https://docs.github.com/en/pages
+4. GitHub Pages Documentation . — Режим доступа: https://docs.github.com/en/pages
 
-5. GitHub Actions Documentation [Электронный ресурс]. — Режим доступа: https://docs.github.com/en/actions
+5. GitHub Actions Documentation . — Режим доступа: https://docs.github.com/en/actions
 
-6. Deploying to GitHub Pages [Электронный ресурс] // GitHub Actions Documentation. — Режим доступа: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
+6. Deploying to GitHub Pages  // GitHub Actions Documentation. — Режим доступа: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
 
-7. Федеральный закон от 27.07.2006 № 152-ФЗ "О персональных данных" [Электронный ресурс]. — Режим доступа: http://www.consultant.ru/document/cons_doc_LAW_61801/
+7. Федеральный закон от 27.07.2006 № 152-ФЗ "О персональных данных" . — Режим доступа: http://www.consultant.ru/document/cons_doc_LAW_61801/
 
 ---
 
