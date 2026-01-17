@@ -2,8 +2,6 @@
 
 ---
 
-## Введение
-
 В работе используется генератор статических сайтов MkDocs (Python), преобразующий Markdown-материалы в набор статических файлов для публикации. Целевой способ размещения - GitHub Pages с автоматизацией через GitHub Actions.
 
 ---
@@ -29,14 +27,12 @@ python3 --version
 pip3 --version
 ```
 
-**Пример вывода (формат):**
+**Пример вывода:**
 
 ```
 Python 3.12.x
 pip 2x.y from /path/to/pip (python 3.12)
 ```
-
-Отображение версий подтверждает наличие Python и работоспособность pip.
 
 ### Установка и настройка виртуального окружения
 
@@ -46,7 +42,7 @@ pip 2x.y from /path/to/pip (python 3.12)
 python3 -m venv .venv
 ```
 
-Альтернатива (virtualenv): см. https://virtualenv.pypa.io/en/latest/installation.html
+Альтернативно (virtualenv):
 
 ```bash
 virtualenv .venv
@@ -280,9 +276,7 @@ rsync -avz --delete ./site/ user@server:/var/www/site/
 
 ---
 
-## Приложения
-
-### Приложение А. Полный перечень команд для воспроизводимости
+### Полный перечень команд для воспроизводимости
 
 **Проверка среды:**
 
@@ -319,9 +313,3 @@ git add .
 git commit -m "Commit message"
 git push origin main
 ```
-
-### Приложение Б. Структура workflow для GitHub Actions
-
-Основные компоненты `.github/workflows/actions.yml`: триггер push в main; права pages: write и id-token: write; job build (mkdocs build + upload-pages-artifact); job deploy (deploy-pages).
-
----
